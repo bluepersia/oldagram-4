@@ -30,7 +30,7 @@
     <main>
       <section class="main-feed">
         <h2 class="sr-only">Main Feed</h2>
-        <ul class="main-feed__list">
+        <ul class="main-feed__list" id="main-feed-list">
           <li class="main-feed__item">
             <article class="post-card">
               <header class="post-card__header container">
@@ -49,11 +49,12 @@
                 class="post-card__main-img"
                 src="./images/post-vangogh.jpg"
                 alt="Portrait of Van Gogh"
+                data-img
               />
 
               <div class="post-card__content container">
                 <div class="post-card__actions">
-                  <button class="post-card__action" aria-label="Like">
+                  <button class="post-card__action" aria-label="Like" data-like>
                     <img
                       class="post-card__action-img"
                       src="./images/icon-heart.png"
@@ -75,7 +76,7 @@
                     />
                   </button>
                 </div>
-                <p class="post-card__likes">21,492 likes</p>
+                <p class="post-card__likes" data-likes>21,492 likes</p>
                 <p class="post-card__text">
                   <span class="post-card__text-user">vincey1853</span>just took
                   a few mushrooms lol

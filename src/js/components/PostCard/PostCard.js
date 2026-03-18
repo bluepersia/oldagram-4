@@ -1,4 +1,4 @@
-import { generateHTML, toggleLike } from "./utils.js";
+import { generateHTML, toggleLike, formatLikes } from "./utils.js";
 
 export default function PostCard(root, post) {
   let state = {
@@ -22,6 +22,6 @@ export default function PostCard(root, post) {
   }
 
   function renderLike() {
-    likesEl.textContent = `${state.likes} likes`;
+    likesEl.textContent = formatLikes(state.likes);
   }
 }

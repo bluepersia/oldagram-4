@@ -1,0 +1,10 @@
+.main-feed__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.92em;
+  background-color: var(--color-gray-2);
+}
+
+.main-feed__item {
+  background-color: var(--color-white);
+}

@@ -1,0 +1,29 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #c6c6c6;
+  --color-gray-2: #ededed;
+}
+
+img,
+button {
+  display: block;
+}
+
+button {
+  width: fit-content;
+}

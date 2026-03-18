@@ -43,9 +43,13 @@ function generateHTML(post) {
                     />
                   </button>
                 </div>
-                <p class="post-card__likes" data-likes>${post.likes} likes</p>
+                <p class="post-card__likes" data-likes>${formatLikes(
+                  post.likes
+                )}</p>
                 <p class="post-card__text">
-                  <span class="post-card__text-user">${post.username}</span>just took
+                  <span class="post-card__text-user">${
+                    post.username
+                  }</span>just took
                   a few mushrooms lol
                 </p>
               </div>
@@ -60,4 +64,8 @@ function toggleLike(state) {
   };
 }
 
-export { generateHTML, toggleLike };
+function formatLikes(likes) {
+  return likes === 1 ? `${likes} like` : `${likes} likes`;
+}
+
+export { generateHTML, toggleLike, formatLikes };

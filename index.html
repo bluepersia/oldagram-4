@@ -25,5 +25,65 @@
         />
       </div>
     </header>
+
+    <main>
+      <section class="main-feed">
+        <h2 class="sr-only">Main Feed</h2>
+        <ul class="main-feed__list">
+          <li class="main-feed__item">
+            <article class="post-card">
+              <header class="post-card__header container">
+                <img
+                  class="post-card__avatar"
+                  src="./images/avatar-vangogh.jpg"
+                  alt="Van Gogh avatar"
+                />
+                <div class="post-card__header-info">
+                  <h3 class="post-card__name">Vincent van Gogh</h3>
+                  <p class="post-card__location">Zudert, Netherlands</p>
+                </div>
+              </header>
+
+              <img
+                class="post-card__main-img"
+                src="./images/post-vangogh.jpg"
+                alt="Portrait of Van Gogh"
+              />
+
+              <div class="post-card__content container">
+                <div class="post-card__actions">
+                  <button class="post-card__action" aria-label="Like">
+                    <img
+                      class="post-card__action-img"
+                      src="./images/icon-heart.png"
+                      alt=""
+                    />
+                  </button>
+                  <button class="post-card__action" aria-label="Comment">
+                    <img
+                      class="post-card__action-img"
+                      src="./images/icon-comment.png"
+                      alt=""
+                    />
+                  </button>
+                  <button class="post-card__action" aria-label="Direct message">
+                    <img
+                      class="post-card__action-img"
+                      src="./images/icon-dm.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <p class="post-card__likes">21,492 likes</p>
+                <p class="post-card__text">
+                  <span class="post-card__text-user">vincey1853</span>just took
+                  a few mushrooms lol
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>

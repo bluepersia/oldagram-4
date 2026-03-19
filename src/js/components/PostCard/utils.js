@@ -43,7 +43,7 @@ function generateHTML(post) {
                     />
                   </button>
                 </div>
-                <p class="post-card__likes" data-likes>${formatLikes(
+                <p class="post-card__likes" data-likes aria-live="polite">${formatLikes(
                   post.likes
                 )}</p>
                 <p class="post-card__text">
